@@ -8,6 +8,14 @@ Pre-Requisites:
 3. Terraform cli
 4. AWS cli
 5. AWS Profile Configured
+6. Environment Variables on CircleCI Project
+        - AWS_ACCESS_KEY_ID
+        - AWS_ACCOUNT_ID
+        - AWS_ECR_ACCOUNT_URL
+        - AWS_ECR_REGISTRY_ID
+        - AWS_REGION
+        - AWS_RESOURCE_NAME_PREFIX
+        - AWS_SECRET_ACCESS_KEY
 
 The following items are being accomplished by using the code:
 
