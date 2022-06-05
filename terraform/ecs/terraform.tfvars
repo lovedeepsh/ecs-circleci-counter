@@ -1,0 +1,5 @@
+region = "us-east-1"
+app_name = "counter"
+app_environment = "development"
+ecr_repo = "438413248147.dkr.ecr.us-east-1.amazonaws.com/counter"
+ecr_tag = "72"
