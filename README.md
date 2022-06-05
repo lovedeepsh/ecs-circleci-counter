@@ -8,7 +8,8 @@ Pre-Requisites:
 3. Terraform cli
 4. AWS cli
 5. AWS Profile Configured
-6. Environment Variables on CircleCI Project
+6. Make command
+7. Environment Variables on CircleCI Project
         - AWS_ACCESS_KEY_ID
         - AWS_ACCOUNT_ID
         - AWS_ECR_ACCOUNT_URL
@@ -40,3 +41,8 @@ The following items are being accomplished by using the code:
       - ECS Autoscaling
       - Target Group
       - IAM Roles
+
+Steps:
+- Run terraform/backend `make all`
+- Run terraform/infra `make all`
+- Run terraform/ecs `make all`

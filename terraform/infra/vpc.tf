@@ -1,4 +1,4 @@
-resource "aws_vpc" "main_eks_istio" {
+resource "aws_vpc" "main_ecs" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
   enable_dns_hostnames = true
@@ -12,6 +12,6 @@ resource "aws_vpc" "main_eks_istio" {
 }
 
 resource "aws_vpc_dhcp_options_association" "dns_resolver" {
-  vpc_id          = aws_vpc.main_eks_istio.id
+  vpc_id          = aws_vpc.main_ecs.id
   dhcp_options_id = aws_vpc_dhcp_options.main_eks.id
 }

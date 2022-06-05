@@ -1,7 +1,7 @@
 output "vpc_id" {
-  value = aws_vpc.main_eks_istio.id
+  value = aws_vpc.main_ecs.id
 }
 
 output "vpc_cidr" {
-  value = aws_vpc.main_eks_istio.cidr_block
+  value = aws_vpc.main_ecs.cidr_block
 }

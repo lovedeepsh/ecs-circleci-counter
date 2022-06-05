@@ -1,7 +1,7 @@
 #### Creating Route Table For Public & Private
 
 resource "aws_route_table" "public_rt" {
-  vpc_id = aws_vpc.main_eks_istio.id
+  vpc_id = aws_vpc.main_ecs.id
 
   tags = {
     Name = var.public_rt_name
@@ -10,7 +10,7 @@ resource "aws_route_table" "public_rt" {
 }
 
 resource "aws_route_table" "private_rt" {
-  vpc_id = aws_vpc.main_eks_istio.id
+  vpc_id = aws_vpc.main_ecs.id
 
   tags = {
     Name = var.private_rt_name
